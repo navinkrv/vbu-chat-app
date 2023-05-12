@@ -1,0 +1,175 @@
+:root{
+    --background:#2E9AF3;
+    --secondary-color:#ffffff;
+    --botmsg-background:#F0F0F0;
+    --usermsg-backgound:#141540;
+    --user-text-color:#141540;
+    --bot-text-color:#000000;
+    --bot-text-colorr: #868686;
+    --bot-text-bluecolor: #2C6CFF;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+img{
+    object-fit: cover;
+}
+
+header{
+    background-color:var(--bot-text-bluecolor);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    left: 0;
+}
+header h2{
+    color: var(--secondary-color);
+}
+
+header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header button{
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    border: none;
+color: rgb(173, 2, 2);
+}
+.brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.brand h2{
+    margin: auto 10px;
+}
+
+
+/* ### Chat container ### */
+
+.main{
+    padding: 50px;
+}
+.box{
+    border-radius: 15px;
+    padding-left: 63px;
+    /* background-color: var(--botmsg-background); */
+    display: flex;
+    flex-direction: column;
+    /* align-items:center; */
+    min-height: 80vh;
+    
+}
+.circle img{
+    border-radius: 50%;
+    width:55px;
+    height: 55px;
+    padding: 15px;
+    
+    
+}
+.messageContainer{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.messege{
+    max-width: 450px;  
+   height: fit-content;
+   background-color: var(--botmsg-background);
+   border-radius: 0px 15px 15px 15px;
+   display: flex;
+   align-items: center;
+   padding : 16px;
+   margin: 10px ;
+  
+  
+
+   
+}
+.sender{
+    flex-direction: row-reverse;
+}
+.sender span{
+   max-width: 450px;  
+   height: fit-content;
+   background-color: var( --bot-text-bluecolor);
+   border-radius: 15px 0px 15px 15px;
+   color: var(--secondary-color);
+   padding : 16px;
+   margin: 10px ;
+
+}
+
+ main>p{
+padding-top: 30px;
+   color: var(--bot-text-colorr);
+   text-align: center;
+   
+}
+footer{
+   
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: var(--secondary-color);
+   
+   
+}
+form{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+footer input{
+    height: 10px;
+    width:60vw;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    margin: 10px;
+    background-color: #F0F0F0;
+    
+}
+.bi{
+    color: white;
+    font-size: 20px;
+}
+
+footer button{
+    width:60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--bot-text-bluecolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer img{
+    width: 30px;
+
+}
